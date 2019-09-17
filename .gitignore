@@ -59,3 +59,5 @@ typings/
 
 # next.js build output
 .next
+# skipping image files ecause of network
+public/images/
