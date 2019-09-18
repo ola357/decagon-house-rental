@@ -16,7 +16,7 @@ $(document).ready(() => {
                 } else {
                 row2.appendChild(article);
                 }
-                article.className += 'col-sm-4 ';
+                article.className += 'col-sm-3 ';
                 article.appendChild(card);
                 card.className += 'card ';
                 card.appendChild(img);

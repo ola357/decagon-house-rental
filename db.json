@@ -16,6 +16,14 @@
             "address": "2, Billings Way",
             "owner": 1,
             "picUrl": "./images/04.jpg"
+        },
+        {
+            "id": 2,
+            "price": 3450000,
+            "location": "Oshodi",
+            "address": "2, Shogunle Way",
+            "owner": 1,
+            "picUrl": "./images/03.jpg"
         }
     ]
 }
