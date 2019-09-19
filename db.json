@@ -1,29 +1,36 @@
 {
-    "users": [
-        {
-        "id": 1,
-        "firstname": "ola",
-        "lastname": "alli",
-        "email": "alliolaoluwa@gmail.com",
-        "password": "qqqqqq123"
-        }
-    ],
-    "listings": [
-        {
-            "id": 1,
-            "price": 350000,
-            "location": "Lekki",
-            "address": "2, Billings Way",
-            "owner": 1,
-            "picUrl": "./images/04.jpg"
-        },
-        {
-            "id": 2,
-            "price": 3450000,
-            "location": "Oshodi",
-            "address": "2, Shogunle Way",
-            "owner": 1,
-            "picUrl": "./images/03.jpg"
-        }
-    ]
+  "users": [
+    {
+      "id": 1,
+      "firstname": "ola",
+      "lastname": "alli",
+      "email": "alliolaoluwa@gmail.com",
+      "password": "qqqqqq123"
+    },
+    {
+      "firstname": "yyy",
+      "lastname": "rrrrr",
+      "email": "t@i.com",
+      "pwd": "nnnnn",
+      "id": 2
+    }
+  ],
+  "listings": [
+    {
+      "id": 1,
+      "price": 350000,
+      "location": "Lekki",
+      "address": "2, Billings Way",
+      "owner": 1,
+      "picUrl": "./images/04.jpg"
+    },
+    {
+      "id": 2,
+      "price": 3450000,
+      "location": "Oshodi",
+      "address": "2, Shogunle Way",
+      "owner": 1,
+      "picUrl": "./images/03.jpg"
+    }
+  ]
 }
