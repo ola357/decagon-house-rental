@@ -21,7 +21,7 @@ $(document).ready(() => {
                 card.className += 'card ';
                 card.appendChild(img);
                 img.className += 'card-img-top ';
-                img.src = data[index].picUrl
+                img.src = data[index].picUrl;
                 card.appendChild(cardBody);
                 cardBody.className += 'card-body ';
                 cardBody.appendChild(h5);
