@@ -2,6 +2,8 @@ $(document).ready(() => {
     $.get("http://localhost:3000/listings", (data, status) => {
         const row1 = document.querySelector('.row1');
         const row2 = document.querySelector('.row2');
+        //let limit = data.length
+        //let i = data.length -1;
         for (let index = 0; index < 8; index++) {
             if (data[index]) {
                 const article = document.createElement('article');
@@ -31,8 +33,15 @@ $(document).ready(() => {
                 p.className += 'card-text ';
                 p.innerHTML = `Location: ${data[index].location}`;
                 cardBody.appendChild(a);
-                a.className += 'btn btn-primary ';
-                a.innerHTML += 'View more'
+                a.className += 'btn btn-primary text-white ';
+                a.innerHTML += 'View more';
+                a.setAttribute('id', data[index].id);
+                a.addEventListener('click',(e) => {
+                    localStorage.removeItem('id');
+                    localStorage.setItem('id', e.target.id);
+                    window.location.href = 'listing.html'
+                })
+
             }
         }
     });

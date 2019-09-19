@@ -1,18 +1,33 @@
-$('.register').submit((event)=>{
-    event.preventDefault();
+$(document).ready(()=>{
+    $('.register').click(()=>{
+        // event.preventDefault();
+        let mail = document.querySelector('#email').value
+        console.log(mail);
+        $.get('http://localhost:3000/users', (values, status)=>{
+            const boolean = values.filter((el)=>{
+                return (mail === el.email)
+            });
+            if(boolean.length === 0){
+                console.log('hurray')
+                const data = {
+                    firstname: document.querySelector('#firstname').value,
+                    lastname: document.querySelector('#lastname').value,
+                    email: document.querySelector('#email').value,
+                    password: document.querySelector('#pwd').value
+                }
+                $.post('http://localhost:3000/users', data, (value)=>{
+                    window.location.href = 'inventory.html'
+                })
+            
+            } else {
+                document.querySelector('.message').innerHTML = 'user already registered'
+            }
+        });
+        
+       
+    });
     
-    const data = {
-        firstname: document.querySelector('#firstname').value,
-        lastname: document.querySelector('#lastname').value,
-        email: document.querySelector('#email').value,
-        password: document.querySelector('#passwword').value
-    }
-    $.post('http://localhost:3000/users', data, (value)=>{
-        alert('yello')
-    })
-
-});
-
+})
 
 /*
 $(document).ready(()=>{

@@ -5,14 +5,28 @@
       "firstname": "ola",
       "lastname": "alli",
       "email": "alliolaoluwa@gmail.com",
-      "password": "qqqqqq123"
+      "password": "ola"
     },
     {
-      "firstname": "yyy",
-      "lastname": "rrrrr",
-      "email": "t@i.com",
-      "pwd": "nnnnn",
-      "id": 2
+      "id": 2,
+      "firstname": "lebron",
+      "lastname": "james",
+      "email": "james@gmail.com",
+      "password": "james"
+    },
+    {
+      "id": 3,
+      "firstname": "steph",
+      "lastname": "curry",
+      "email": "steph@gmail.com",
+      "password": "steph"
+    },
+    {
+      "firstname": "a",
+      "lastname": "a",
+      "email": "w@y.com",
+      "password": "a",
+      "id": 4
     }
   ],
   "listings": [
@@ -26,11 +40,67 @@
     },
     {
       "id": 2,
-      "price": 3450000,
+      "price": 550000,
       "location": "Oshodi",
       "address": "2, Shogunle Way",
       "owner": 1,
       "picUrl": "./images/03.jpg"
+    },
+    {
+      "id": 3,
+      "price": 550000,
+      "location": "Oshodi",
+      "address": "2, Shogunle Way",
+      "owner": 1,
+      "picUrl": "./images/01.jpg"
+    },
+    {
+      "id": 4,
+      "price": 550000,
+      "location": "Oshodi",
+      "address": "2, Shogunle Way",
+      "owner": 1,
+      "picUrl": "./images/05.jpg"
+    },
+    {
+      "id": 5,
+      "price": 800000,
+      "location": "3000000",
+      "address": "2, Shogunle Way",
+      "owner": 1,
+      "picUrl": "./images/06.jpg"
+    },
+    {
+      "id": 6,
+      "price": 250000,
+      "location": "Fadeyi",
+      "address": "2, Shogunle Way",
+      "owner": 1,
+      "picUrl": "./images/05.jpg"
+    },
+    {
+      "id": 7,
+      "price": 550000,
+      "location": "Agege",
+      "address": "2, Shogunle Way",
+      "owner": 1,
+      "picUrl": "./images/03.jpg"
+    },
+    {
+      "id": 8,
+      "price": 1000000,
+      "location": "Ikoyi",
+      "address": "2, Shogunle Way",
+      "owner": 1,
+      "picUrl": "./images/03.jpg"
+    },
+    {
+      "id": 9,
+      "price": 950000,
+      "location": "Magodo",
+      "address": "2, Shogunle Way",
+      "owner": 1,
+      "picUrl": "./images/04.jpg"
     }
   ]
 }
