@@ -6,10 +6,9 @@ $('.login').click(()=>{
             const element = data[index];
             if(element.email === input){
                 alert("yea")
-            } else{
+            } else {
                 alert("nay")
             }
-            
         }
     });
 
