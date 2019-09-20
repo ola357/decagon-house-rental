@@ -16,7 +16,9 @@ $(document).ready(()=>{
                     password: document.querySelector('#pwd').value
                 }
                 $.post('http://localhost:3000/users', data, (value)=>{
-                    window.location.href = 'inventory.html'
+                    localStorage.removeItem('userid');
+				    localStorage.setItem('userid', value.id );
+                    window.location.href = 'inventory.html';
                 })
             
             } else {

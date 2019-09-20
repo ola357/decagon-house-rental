@@ -39,7 +39,7 @@ $(document).ready(() => {
                 a.addEventListener('click',(e) => {
                     localStorage.removeItem('id');
                     localStorage.setItem('id', e.target.id);
-                    window.location.href = 'listing.html'
+                    window.location.href = 'listing.html';
                 })
 
             }
