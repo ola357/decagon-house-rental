@@ -1,4 +1,6 @@
 $(document).ready(() => {
+    document.querySelector('.low').textContent = document.querySelector('#minPrice').value
+    document.querySelector('.high').textContent = document.querySelector('#customRange').value
     $.get('http://localhost:3000/listings', (data, status) => {
         const row1 = document.querySelector('.row1');
         const row2 = document.querySelector('.row2');

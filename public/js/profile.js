@@ -48,7 +48,7 @@ $(document).ready(()=>{
                 a.setAttribute('id', listings[i].id);
                 a.addEventListener('click',(e) => {
                     $.ajax({
-                        url: 'http://localhost:3000/listings' + e.target.id,
+                        url: 'http://localhost:3000/listings/' + e.target.id,
                         type: 'DELETE',
                         success: (result) =>{
                             alert('deleted successfully');
